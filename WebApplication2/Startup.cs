@@ -46,7 +46,7 @@ namespace WebApplication2
             app.UseRouting();
 
             app.UseAuthorization();
-            //1
+            //12
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapRazorPages();
