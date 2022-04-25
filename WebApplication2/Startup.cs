@@ -29,7 +29,7 @@ namespace WebApplication2
             services.AddRazorPages();
             services.AddRazorPages();
         }
-
+        //stage line
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
@@ -43,12 +43,12 @@ namespace WebApplication2
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
-          
+          //stage line
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
             app.UseRouting();
-        
+        //stage line
             app.UseAuthorization();
             //1234
             app.UseEndpoints(endpoints =>
