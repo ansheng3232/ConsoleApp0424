@@ -12,17 +12,17 @@ using System.Threading.Tasks;
 namespace WebApplication2
 {
     public class Startup
-    {
+    {//stage line
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
         }
-
+        //stage line
         public IConfiguration Configuration { get; }
-
+        //stage line
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
-        {
+        {//stage line
             services.AddRazorPages();
             services.AddRazorPages();
             services.AddRazorPages();
@@ -43,12 +43,12 @@ namespace WebApplication2
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
-
+          
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
             app.UseRouting();
-
+        
             app.UseAuthorization();
             //1234
             app.UseEndpoints(endpoints =>
